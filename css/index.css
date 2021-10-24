@@ -1,0 +1,54 @@
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+hr {
+    display: block;
+    width: 70%;
+}
+
+.intro {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+
+.intro .inner {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.content {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #F9F3F4;
+    font-size: 300%;
+}
+
+.btn {
+    border-radius: 10px;
+    font-family: 'Oswald', sans-serif;
+    color: #3e93ef;
+    font-size: 135%;
+    padding: 4px;
+    border: solid #3e93ef 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: #fff;
+    border: solid #fff 3px;
+}

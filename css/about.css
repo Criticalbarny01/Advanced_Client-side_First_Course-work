@@ -1,0 +1,22 @@
+#middleCont {
+    padding: 15px;
+    width: 50%;
+    margin: auto;
+}
+
+article {
+    padding: 50px;
+}
+
+aside {
+    margin-top: 5px;
+    margin-left: 25px;
+    padding: 10px;
+    float: right;
+    background: rgba(62, 147, 239, 0.55);
+}
+
+aside > ul {
+    padding: 0;
+    list-style: none;
+}
