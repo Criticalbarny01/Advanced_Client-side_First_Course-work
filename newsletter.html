@@ -18,22 +18,35 @@
         </ul>
     </nav>
 </header>
-<section>
+<section id="form">
     <form action="">
         <div>
             <h2>Subscribe to my Newsletter</h2>
             <p>Follow me on my Computer science journey and stay updated on my milestones!</p>
         </div>
-        <div>
-            <label>
-                <input type="text" placeholder="Name" name="name" required>
-            </label>
-
-            <label>
-                <input type="text" placeholder="Enter Email" name="email" required>
-            </label>
+        <div class="inputFields">
+            <div>
+                <label>
+                    <input type="text" placeholder="Name" name="name" required>
+                </label>
+                <span></span>
+            </div>
+            <div>
+                <label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                </label>
+                <span></span>
+            </div>
         </div>
-        <div>
+        <div class="radio">
+            <input type="radio" id="everything" name="fav_language" value="everything">
+            <label for="everything">I want to know everything!</label><br>
+            <input type="radio" id="middle" name="fav_language" value="middle">
+            <label for="middle">Maybe not everything.</label><br>
+            <input type="radio" id="minimum" name="fav_language" value="minimum">
+            <label for="minimum">Only send the minimum.</label><br>
+        </div>
+        <div class="button">
             <input type="submit" value="Subscribe">
         </div>
     </form>

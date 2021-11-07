@@ -1,5 +1,71 @@
-form {
+#form {
     padding: 50px;
     margin: auto;
     width: 50%;
 }
+
+form {
+    justify-content: center;
+}
+
+.inputFields {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.inputFields div:first-child {
+    float:left;
+    padding-right: 30px;
+}
+
+.inputFields input + span {
+    position: relative;
+}
+
+.inputFields input + span::before {
+    position: absolute;
+    right: -20px;
+    top: 5px;
+}
+
+.inputFields input:invalid {
+    border: 2px solid red;
+}
+
+.inputFields input:valid {
+    border: 2px solid green;
+}
+
+.inputFields input:invalid + span::before {
+    content: '✖';
+    color: red;
+}
+
+.inputFields input {
+    border-radius: 10px;
+    height: 30px;
+    width: 220px;
+}
+
+.inputFields input:valid + span::before {
+    content: '✓';
+    color: green;
+}
+
+.radio {
+    padding-bottom: 15px;
+}
+
+.radio input:nth-child(2) {
+    color: darkorange;
+}
+
+input[type="submit"] {
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+}
+

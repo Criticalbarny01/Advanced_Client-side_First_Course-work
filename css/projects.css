@@ -9,7 +9,17 @@
     transform: skew(-15deg);
 }
 
+article {
+    width: 48%;
+    float: left;
+    padding: 10px;
+}
+
 .top-content {
     text-align: center;
     margin: auto;
+}
+
+.articles article:last-of-type {
+
 }

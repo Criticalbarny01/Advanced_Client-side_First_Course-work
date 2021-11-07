@@ -24,3 +24,40 @@ aside > ul {
 article header h2 {
     text-shadow: 2px 2px #999999;
 }
+
+#animationCont {
+    width: 35%;
+    margin: auto;
+    padding: 20px;
+}
+
+#animationCont h2 {
+    position: relative;
+    margin-left: 10px;
+}
+
+.loading {
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    height: 40px;
+    width: 500px;
+}
+
+.loading-bar {
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes load {
+    0% { width: 0; }
+    100% { width: 50%; }
+}
