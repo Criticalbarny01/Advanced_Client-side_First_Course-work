@@ -80,3 +80,9 @@ footer a:visited {
 footer a:hover {
     color: #3e93ef;
 }
+
+@media (max-width: 450px) {
+    footer a {
+        font-size: 12px;
+    }
+}

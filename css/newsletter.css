@@ -15,7 +15,7 @@ form {
 
 .inputFields div:first-child {
     float:left;
-    padding-right: 30px;
+    padding-right: 15px;
 }
 
 .inputFields input + span {
@@ -36,7 +36,7 @@ form {
     border: 2px solid green;
 }
 
-.inputFields input:invalid + span::before {
+.inputFields input:invalid + label::before {
     content: '✖';
     color: red;
 }
@@ -44,10 +44,10 @@ form {
 .inputFields input {
     border-radius: 10px;
     height: 30px;
-    width: 220px;
+    width: 200px;
 }
 
-.inputFields input:valid + span::before {
+.inputFields input:valid + label::before {
     content: '✓';
     color: green;
 }
@@ -56,7 +56,7 @@ form {
     padding-bottom: 15px;
 }
 
-.radio input:nth-child(2) {
+.radio label:nth-of-type(2) {
     color: darkorange;
 }
 
@@ -69,3 +69,19 @@ input[type="submit"]:hover {
     background-color: white;
 }
 
+@media (max-width: 450px) {
+
+    .inputFields input {
+        width: 150px;
+        height: 20px;
+    }
+
+    .inputFields div:first-child {
+        padding-right: 5px;
+        padding-bottom: 15px;
+    }
+
+    .radio {
+        font-size: 12px;
+    }
+}

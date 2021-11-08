@@ -20,6 +20,12 @@ article {
     margin: auto;
 }
 
-.articles article:last-of-type {
+@media (max-width: 450px) {
+    #title {
+        font-size: 3em;
+    }
 
+    article {
+        width: 90%;
+    }
 }
